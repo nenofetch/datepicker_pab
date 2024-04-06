@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Date Picker</string>
+    <string name="set_tanggal_lahir">Set tanggal lahir</string>
+    <string name="set_waktu_lahir">Set waktu lahir</string>
+</resources>
