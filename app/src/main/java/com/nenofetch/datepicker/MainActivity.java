@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int thn, int bln, int tgl) {
-                        tanggal.setText(tgl + "-" + (bln + 1) + "-" + thn);
+                        tanggal.setText(thn + "/" + (bln + 1) + "/" + tgl);
                     }
                 }, thn, bln, tgl);
         datePickerDialog.show();
@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
         TimePickerDialog timePickerDialog = new TimePickerDialog(MainActivity.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
-            public void onTimeSet(TimePicker view, int jam, int menit) {
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                 waktu.setText(jam + ":" + menit);
             }
-        }, jam, menit, false);
+        },jam, menit, false);
         timePickerDialog.show();
     }
 }
